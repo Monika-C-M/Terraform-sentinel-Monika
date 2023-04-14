@@ -1,6 +1,6 @@
 resource "aws_kms_key" "Sns_Sqs_key" {
   description             = "KMS key sns and sqs"
-  deletion_window_in_days = 10
+  deletion_window_in_days = 15
 }
 
 output "key_id" {
