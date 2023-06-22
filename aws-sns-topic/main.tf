@@ -8,7 +8,7 @@ output "key_id" {
 }
 
 resource "aws_sns_topic" "sns_topic" {
-  name              = "first-SNS-topic-1"
+  name              = "first-SNS-topic-10"
   /*kms_master_key_id = "alias/aws/sns"*/
   kms_master_key_id = "${aws_kms_key.Sns_Sqs_key.key_id}"
 }
